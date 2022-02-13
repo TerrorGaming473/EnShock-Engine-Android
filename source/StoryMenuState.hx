@@ -104,7 +104,7 @@ class StoryMenuState extends MusicBeatState
 			weekThing.targetY = i;
 			grpWeekText.add(weekThing);
 
-			weekThing.screenCenter(X);
+			weekThing.x += ((weekThing.width +20 * i);
 			weekThing.antialiasing = ClientPrefs.globalAntialiasing;
 			// weekThing.updateHitbox();
 
@@ -174,8 +174,8 @@ class StoryMenuState extends MusicBeatState
 		txtTracklist.alignment = CENTER;
 		txtTracklist.font = rankText.font;
 		txtTracklist.color = 0xFFe55777;
-		add(txtTracklist);
-		// add(rankText);
+		//add(txtTracklist);
+		ad(rankText);
 		add(scoreText);
 		add(txtWeekTitle);
 
