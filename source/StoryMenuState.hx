@@ -104,7 +104,7 @@ class StoryMenuState extends MusicBeatState
 			weekThing.targetY = i;
 			grpWeekText.add(weekThing);
 
-			weekThing.x = -600;
+			weekThing.x = -260;
 			weekThing.antialiasing = ClientPrefs.globalAntialiasing;
 			// weekThing.updateHitbox();
 
@@ -148,7 +148,7 @@ class StoryMenuState extends MusicBeatState
 		}
 		curDifficulty = Math.round(Math.max(0, CoolUtil.defaultDifficulties.indexOf(lastDifficultyName)));
 		
-		sprDifficulty = new FlxSprite(0, leftArrow.y);
+		sprDifficulty = new FlxSprite(490, leftArrow.y);
 		sprDifficulty.antialiasing = ClientPrefs.globalAntialiasing;
 		changeDifficulty();
 
